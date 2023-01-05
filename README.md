@@ -1,18 +1,10 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Game Preparation
+There are ten numbered tiles (from 1 to 10) which in the beginning, are all open.
 
-## Folder Structure
+Playing
+Two player compete each other in every round. The respective player roles two dices and computes the sum of the obtained numbers. The player roles two dices. Player always rolls two dice and covers two tiles matching the sum of the dice roll. For example, ifthe dice show a 2 and a 3, player may cover one of 2 and 3 or 1 and 4. Selected ones are turned over. If no such option is available, the player's account is credited with the total of all open boxes. It is not necessary to automatically examine each possibility for the presence of at least one valid combination.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Game Over
+There are a total of 10 rounds played, and each round consists of one option made by each player. Whoever has the smallest account balance wins. The player who successfully closes the final remaining boxes in a round wins instantly, regardless of the account values earned.
